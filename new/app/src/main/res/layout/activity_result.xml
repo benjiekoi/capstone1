@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.myapplication.Menu"
+    android:background="#fcfcfc">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_height="60dp"
+        android:layout_width="match_parent"
+
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+
+        >
+
+        <android.support.design.widget.CollapsingToolbarLayout
+
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:background="@color/colorPrimary">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/circlebackgroundpurple"
+                android:src="@drawable/ic_action_address"
+                android:layout_gravity="right"
+                android:layout_marginTop="240dp"
+                android:layout_marginRight="20dp"
+                android:padding="10dp"/>
+
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbarid"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                app:layout_collapseMode="pin"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+
+                >
+
+            </android.support.v7.widget.Toolbar>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="BP AND HR Reading"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="456dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/ll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fcfcfc"
+            android:gravity="center"
+            android:orientation="vertical"
+            tools:context="com.demotxt.droidsrce.homedashboard.Home">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="500dp"
+                    android:layout_height="400dp"
+                    android:layout_margin="20dp"
+
+                    android:clickable="false"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardBackgroundColor="@color/cardview_light_background"
+                    app:cardCornerRadius="25dp"
+                    android:id="@+id/cardView2">
+
+                    <RelativeLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        android:layout_alignStart="@+id/cardView2"
+                        android:layout_alignTop="@+id/cardView2"
+                        android:orientation="vertical">
+
+                        <DigitalClock
+                            android:id="@+id/simpleDigitalClock"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="#000"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/textView6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_above="@+id/dia_view"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginBottom="36dp"
+                            android:layout_marginStart="11dp"
+                            android:text="SYS"
+                            android:textColor="@android:color/black"
+                            android:textSize="30sp"
+                            android:textStyle="bold|italic" />
+
+                        <TextView
+                            android:id="@+id/sys_view"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBaseline="@+id/textView6"
+                            android:layout_alignBottom="@+id/textView6"
+                            android:layout_alignStart="@+id/dia_view"
+                            android:textColor="@android:color/black"
+                            android:textSize="50sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/textView8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/sys_view"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="15dp"
+                            android:text="mmHg"
+                            android:textColor="@android:color/black"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/textView9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignStart="@+id/textView6"
+                            android:layout_centerVertical="true"
+                            android:text="DIA"
+                            android:textColor="@android:color/black"
+                            android:textSize="30sp"
+                            android:textStyle="bold|italic" />
+
+                        <TextView
+                            android:id="@+id/dia_view"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBaseline="@+id/textView9"
+                            android:layout_alignBottom="@+id/textView9"
+                            android:layout_marginStart="20dp"
+                            android:layout_toEndOf="@+id/textView12"
+                            android:textColor="@android:color/black"
+                            android:textSize="50sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/textView11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/dia_view"
+                            android:layout_alignStart="@+id/textView8"
+                            android:text="mmHg"
+                            android:textColor="@android:color/black"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/textView12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignStart="@+id/textView9"
+                            android:layout_below="@+id/dia_view"
+                            android:layout_marginTop="51dp"
+                            android:text="PULSE"
+                            android:textColor="@android:color/background_dark"
+                            android:textSize="30sp"
+                            android:textStyle="bold|italic" />
+
+                        <TextView
+                            android:id="@+id/hr_view"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBaseline="@+id/textView12"
+                            android:layout_alignBottom="@+id/textView12"
+                            android:layout_alignStart="@+id/dia_view"
+                            android:textColor="@android:color/black"
+                            android:textSize="40sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/textView14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/textView12"
+                            android:layout_alignStart="@+id/textView11"
+                            android:text="/min"
+                            android:textColor="@android:color/black"
+                            android:textStyle="bold" />
+
+
+                        <Button
+                            android:id="@+id/button3"
+                            android:layout_width="120dp"
+                            android:layout_height="40dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignStart="@+id/textView12"
+                            android:layout_marginBottom="19dp"
+                            android:background="@color/colorAccent"
+                            android:onClick="readdata"
+                            android:text="MEASURE NOW"
+                            android:textSize="12sp" />
+
+
+                        <ImageView
+                            android:id="@+id/blebtn1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_alignStart="@+id/textView14"
+                            android:layout_alignTop="@+id/button3"
+                            android:clickable="true"
+                            android:onClick="bleclick"
+                            app:srcCompat="@drawable/ic_ble_disconnected" />
+
+                        <TextView
+                            android:id="@+id/btn_state"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_alignEnd="@+id/textView11"
+                            android:layout_below="@+id/blebtn1"
+                            android:text="@string/disconnected"
+                            android:textColor="@color/black_overlay"
+                            android:textSize="9sp" />
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

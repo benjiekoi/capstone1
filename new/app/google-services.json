@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "860604521217",
+    "firebase_url": "https://bphrmonitor.firebaseio.com",
+    "project_id": "bphrmonitor",
+    "storage_bucket": "bphrmonitor.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:860604521217:android:9b537403cc3f9ff9",
+        "android_client_info": {
+          "package_name": "com.example.user.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "860604521217-0v8i3kctp8n4st6i4gnd2677p9rnh8ov.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.user.myapplication",
+            "certificate_hash": "c807b9855b3d3a5cf8d56110c52e70ee5c24169e"
+          }
+        },
+        {
+          "client_id": "860604521217-6measlvusqfm0l11h41h9j90qt8tcbhb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCqGedvpJmaWy5SvomQ54duY6_tYtCvyCQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "860604521217-6measlvusqfm0l11h41h9j90qt8tcbhb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
